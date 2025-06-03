@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>학생 버튼 클릭 기록</title>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>버튼 클릭 기록</h1>
+  <label>학년:</label>
+  <select id="grade"><option>1</option><option>2</option><option>3</option></select>
+  <label>반:</label>
+  <select id="class"><option>1</option><option>2</option><option>3</option></select>
+  <label>번호:</label>
+  <select id="number">
+    <script>for (let i = 1; i <= 30; i++) { document.write(`<option>${i}</option>`); }</script>
+  </select>
+  <br><br>
+  <label>이름:</label>
+  <input type="text" id="name" placeholder="이름 입력">
+  <br><br>
+  <label>과목:</label>
+  <select id="subject"><option>생명과학</option><option>과학탐구실험</option></select>
+  <br><br>
+  <button onclick="sendData()">+1 기록하기</button>
+  <p id="result"></p>
+</body>
+</html>
