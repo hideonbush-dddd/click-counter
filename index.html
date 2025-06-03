@@ -11,7 +11,6 @@
   <h1>행동 기록하기</h1>
   <label>과목:</label>
   <select id="subject"><option>생명과학</option><option>과학탐구실험</option></select>
-<br><br>  
   <label>학년:</label>
   <select id="grade"><option>1</option><option>2</option><option>3</option></select>
   <label>반:</label>
@@ -22,12 +21,10 @@
   <select id="number">
     <script>for (let i = 1; i <= 30; i++) { document.write(`<option>${i}</option>`); }</script>
   </select>
-  <br><br>
   <label>이름:</label>
   <input type="text" id="name" placeholder="이름 입력">
 <label>인증코드:</label>
 <input type="text" id="passcode" placeholder="인증코드">
-  <br><br>
   <button onclick="sendData()">+1 기록하기</button>
   <p id="result"></p>
   <link rel="stylesheet" href="style.css">
